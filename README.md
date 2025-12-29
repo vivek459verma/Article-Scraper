@@ -130,7 +130,7 @@ _The application will open automatically at `http://localhost:3000_`
 
 You can view the live deployment of the frontend here:
 
-**[🔗 LINK_TO_YOUR_DEPLOYED_FRONTEND_HERE]**
+**(https://article-scraper-one.vercel.app/)**
 
 > **How to use the demo:**
 >
