@@ -17,10 +17,11 @@ export default function Dashboard() {
     setLoading(true);
     try {
       const { data } = await fetchArticles(page, search);
-      setArticles(data.data);
-      setTotalPages(data.totalPages);
+      setArticles(data?.data || []);
+      setTotalPages(data?.totalPages || 1);
     } catch (error) {
       console.error("Failed to fetch articles", error);
+      setArticles([]);
     } finally {
       setLoading(false);
     }
@@ -93,7 +94,7 @@ export default function Dashboard() {
         <p>Loading articles...</p>
       ) : (
         <div className="grid">
-          {articles.map((article) => {
+          {articles?.map((article) => {
             const isUpdated = article.createdAt !== article.updatedAt;
             const isEnhancing = enhancingId === article._id;
             return (
