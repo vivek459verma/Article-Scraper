@@ -11,7 +11,8 @@ export const api = axios.create({
   },
 });
 
-export const fetchArticles = (page = 1, search = "") => api.get("/");
+export const fetchArticles = (page = 1, search = "") =>
+  api.get("/", { params: { page, search } });
 
 export const fetchArticleById = (id) => api.get(`/${id}`);
 
