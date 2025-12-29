@@ -11,8 +11,7 @@ export const api = axios.create({
   },
 });
 
-export const fetchArticles = (page = 1, search = "") =>
-  api.get(`/?page=${page}&limit=9&search=${search}`);
+export const fetchArticles = (page = 1, search = "") => api.get("/");
 
 export const fetchArticleById = (id) => api.get(`/${id}`);
 

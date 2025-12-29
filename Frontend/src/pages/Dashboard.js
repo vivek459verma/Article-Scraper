@@ -27,7 +27,7 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    const timeout = setTimeout(loadArticles, 300); // Debounce search
+    const timeout = setTimeout(loadArticles, 3000); // Debounce search
     return () => clearTimeout(timeout);
   }, [page, search]);
 
