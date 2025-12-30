@@ -132,7 +132,8 @@ You can view the live deployment of the frontend here:
 
 **(https://article-scraper-one.vercel.app/)**
 
-> **How to use the demo:**
+> **How to use:**
+> 
 >
 > 1. **Dashboard**: You will see a list of articles.
 > 2. **Scrape**: Click "Scrape New" to fetch the latest articles from the source.
@@ -140,6 +141,10 @@ You can view the live deployment of the frontend here:
 > 4. **Compare**: Click the card to read the full content.
 
 ---
+
+https://github.com/user-attachments/assets/c4ff7fd1-a8b3-448b-b424-d2f6ca892ce8
+
+
 
 ## 📁 Project Structure
 
